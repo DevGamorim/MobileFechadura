@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Fechadura",
+    "slug": "Fechadura",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
