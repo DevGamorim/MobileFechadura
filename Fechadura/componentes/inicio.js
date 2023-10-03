@@ -4,6 +4,6 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function inicio1(){
     return(
-        <Text>Incio 1</Text>
+        <Text>aaaaaaaaa</Text>
     )
 };

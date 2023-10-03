@@ -1,23 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import inicio1 from './componentes/inicio1';
+import { createStackNavigator } from 'react-navigation-stack'
 
-export default function App() {
+import inicio from '/componentes/inicio';
+
+// Crie uma pilha de navegação
+const Stack = createStackNavigator();
+
+// Adicione a tela à navegação
+function App() {
   return (
-    <View style={styles.container}>
-      <inicio1/>
-      <Text>É gatinhah!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        {/* ... outras telas */}
+        <Stack.Screen name="inicio" component={inicio} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
