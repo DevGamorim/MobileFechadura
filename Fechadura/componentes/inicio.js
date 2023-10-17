@@ -3,56 +3,19 @@ import logoPadoBranco1 from '../assets/images/logoPadoBranco1.png';
 
 export function inicio() {
   return (
-    <View style={styles.root}>
-      <Image source={{uri: logoPadoBranco1}} style={{width: 296, height: 55}} contentFit="cover"/>
-    </View>
+    <div className="w-[375px] h-[812px] pb-[379px] bg-stone-950 rounded-[29px] flex-col justify-start items-center gap-[334px] inline-flex">
+    <div className="w-[375px] h-11 relative backdrop-blur-[20px] flex-col justify-start items-start flex">
+        <div className="w-[54px] pt-1.5 justify-center items-center inline-flex">
+            <div className="w-[54px] text-center text-white text-[15px] font-medium font-['Roboto'] leading-tight">9:41</div>
+        </div>
+        <div className="w-[24.66px] h-[11px] relative">
+            <div className="w-[22px] h-[11px] left-0 top-0 absolute opacity-30 rounded-sm border border-white" />
+            <div className="w-[18px] h-[7px] left-[2px] top-[2px] absolute bg-white rounded-sm" />
+        </div>
+        <img className="w-[15.33px] h-[11px]" src="https://via.placeholder.com/15x11" />
+        <img className="w-[17px] h-[10.67px]" src="https://via.placeholder.com/17x11" />
+    </div>
+    <Image source={{uri: logoPadoBranco1}} style={{width: 296, height: 55}} contentFit="cover"/>
+</div>
   );
 }
-
-const styles = StyleSheet.create({
-  root: {
-    width: 375,
-    height: 812,
-    paddingBottom: 0,
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: 334,
-    backgroundColor: '#0D0D0D',
-    borderRadius: 29,
-  },
-  group: {
-    width: 24.661,
-    height: 11,
-    flexShrink: 0,
-  },
-  $941: {
-    width: 54,
-    flexShrink: 0,
-    color: '#FFF',
-    textAlign: 'center',
-    fontFamily: 'Roboto',
-    fontSize: 15,
-    fontStyle: 'normal',
-    fontWeight: '500',
-    lineHeight: '20px /* 133.333% */',
-    letterSpacing: -0.24,
-  },
-  statusBar: {
-    width: 375,
-    height: 44,
-    flexShrink: 0,
-    backdropFilter: 'blur(10px)',
-  },
-  frame: {
-    width: 54,
-    paddingTop: 6,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-  logoPadoBranco1: {
-    width: 296,
-    height: 55,
-    flexShrink: 0,
-  },
-});
